@@ -1,8 +1,8 @@
 package votingsystem;
-import org.junit.After;
-import org.junit.Before;
-import org.junit.Test;
-import static org.junit.Assert.*;
+import org.junit.jupiter.api.AfterAll;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;
 
@@ -12,7 +12,7 @@ public class VotingSystemTest {
     private final ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
     private final PrintStream originalOut = System.out;
 
-    @Before
+    @BeforeEach
     public void setUp() {
 
         votingSystem = new VotingSystem();
@@ -62,7 +62,7 @@ public class VotingSystemTest {
         assertTrue(output.contains("Charlie: 2 votes"));
     }
 
-    @After
+    @AfterAll
     public void tearDown() {
 
         System.setOut(originalOut);
