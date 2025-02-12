@@ -1,4 +1,7 @@
 package insurancepolicy;
+import insurancepolicy.usingset.CoverageType;
+import insurancepolicy.usingset.Policy;
+import insurancepolicy.usingset.PolicyManager;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import java.time.LocalDate;

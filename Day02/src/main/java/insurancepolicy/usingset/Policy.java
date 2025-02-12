@@ -1,4 +1,5 @@
-package insurancepolicy;
+package insurancepolicy.usingset;
+
 import java.time.LocalDate;
 public class Policy {
     private String policyNumber;
