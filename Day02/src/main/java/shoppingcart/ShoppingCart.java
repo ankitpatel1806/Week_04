@@ -48,4 +48,17 @@ public class ShoppingCart {
             System.out.println("Product: " + entry.getKey() + " | Price: " + entry.getValue());
         }
     }
+
+    public static void main(String[] args) {
+        ShoppingCart shoppingCart = new ShoppingCart();
+        shoppingCart.addProductPrice("Apple", 50);
+        shoppingCart.addProductPrice("Banana", 45);
+        shoppingCart.addProductPrice("Cherry", 450);
+
+        shoppingCart.addProductToCart("Apple");
+        shoppingCart.addProductToCart("Banana");
+
+        shoppingCart.displayCart();
+        shoppingCart.displaySortedByPrice();
+    }
 }
