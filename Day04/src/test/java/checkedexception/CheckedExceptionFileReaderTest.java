@@ -11,4 +11,5 @@ public class CheckedExceptionFileReaderTest {
     public void testMain() {
         assertDoesNotThrow(() -> CheckedExceptionFileReader.main(new String[]{}));
     }
+
 }
