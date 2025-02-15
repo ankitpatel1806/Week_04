@@ -8,7 +8,7 @@ import java.nio.file.*;
 public class FileProcessorTest {
 
     FileProcessor fileProcessor = new FileProcessor();
-    String filename = "testfile.txt";
+    String filename = "C:\\Users\\yugap\\OneDrive\\Desktop\\cap\\Week_04\\Day05\\src\\test\\java\\junitproblem\\basicproblem\\filehandling\\testfile.txt";
 
     @BeforeEach
     public void setUp() {
@@ -34,7 +34,7 @@ public class FileProcessorTest {
 
     @Test
     public void testIOExceptionWhenFileNotExist() {
-        assertThrows(IOException.class, () -> fileProcessor.readFromFile("nonexistentfile.txt"));
+        assertThrows(IOException.class, () -> fileProcessor.readFromFile("C:\\Users\\yugap\\OneDrive\\Desktop\\cap\\Week_04\\Day05\\src\\test\\java\\junitproblem\\basicproblem\\filehandling\\testfile.txt"));
     }
 
     @AfterEach
