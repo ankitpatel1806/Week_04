@@ -19,5 +19,6 @@ public class TaskProcessorTest {
     public void testLongRunningTask1() throws InterruptedException {
         taskProcessor.longRunningTask();
     }
+
 }
 
